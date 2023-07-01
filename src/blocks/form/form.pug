@@ -1,0 +1,12 @@
+mixin form(modifier)
+  form.form&attributes(attributes)
+    .form__area
+      label.form__title(for="name") Name
+      input.form__field#name(type="text")
+      label.form__title(for="company") Company
+      input.form__field#company(type="text")
+      label.form__title(for="email") E-mail*
+      input.form__field#email(type="email" required)
+      label.form__title(for="message") Message*
+      textarea.form__field#message(name="Message" required)
+    button.form__send-btn(type="submit") Send

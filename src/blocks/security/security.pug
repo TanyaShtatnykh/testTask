@@ -1,0 +1,21 @@
+mixin security(modifier)
+  section.security&attributes(attributes)
+    .security__area
+      h2.security__title What Are Digital Securities?
+      p.security__text Digital securities represent traditional assets like equity or bonds. They&nbsp;carry all of the same legal rights of their paper issued counter-parts.
+      ul.security__stages
+        li.security__stage
+          img.security__photo(src="img/invest.png", alt="Invest")
+          h3.security__stage-title Invest Any Amount
+          p.security__stage-text Start with as little as $1, buy&nbsp;parts&nbsp;of a whole share
+        li.security__stage
+          img.security__photo(src="img/access.png", alt="Access")
+          h3.security__stage-title Access Private Equity
+          p.security__stage-text Get access to investments typically reserved for institutions
+        li.security__stage
+          img.security__photo(src="img/invest.png", alt="Торговля")
+          h3.security__stage-title Trade 24/7
+          p.security__stage-text Digital assets don’t sleep, so&nbsp;why&nbsp;should you stop trading?
+      form.security__form
+        input.security__field(type="email" placeholder="E-mail*" required)
+        button.security__btn(type="submit") Get Early Access

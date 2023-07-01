@@ -1,0 +1,21 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__area
+      img.header__logo(src="img/logo.png", alt="Equiteez")
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item: a.header__menu-link(href="#") What Are Digital Securities?
+          li.header__menu-item: a.header__menu-link(href="#") Products
+          li.header__menu-item: a.header__menu-link(href="#") Digitize Your Business
+          li.header__menu-item: a.header__menu-link(href="#") Blog
+          li.header__menu-item: a.header__menu-link(href="#") Contact Us
+      .header__socials
+        a.header__social-link(href="#")
+          include ./img/twitter.svg
+        a.header__social-link(href="#")
+          include ./img/facebook.svg
+        a.header__social-link(href="#")
+          include ./img/linkedin.svg
+        a.header__social-link(href="#")
+          include ./img/medium.svg
+

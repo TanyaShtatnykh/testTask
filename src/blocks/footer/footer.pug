@@ -1,0 +1,24 @@
+mixin footer(modifier)
+  footer.footer&attributes(attributes)
+    .footer__area
+      .footer__container
+        .footer__info
+          img.footer__logo(src="img/footerLogo.png", alt="Logo")
+          a.footer__menu-link(href="#") Contact Us
+          .footer__social
+            a.footer__social-link(href="#")
+              include ./img/Ftwitter.svg
+            a.footer__social-link(href="#")
+              include ./img/Ffacebook.svg
+            a.footer__social-link(href="#")
+              include ./img/Flinkedin.svg
+            a.footer__social-link(href="#")
+              include ./img/Fmedium.svg
+        .footer__info
+        ul.footer__menu-list
+          li.footer__menu-item: a.footer__menu-link(href="#") What Are Digital Securities?
+          li.footer__menu-item: a.footer__menu-link(href="#") Products
+          li.footer__menu-item: a.footer__menu-link(href="#") Digitize Your Business
+          li.footer__menu-item: a.footer__menu-link(href="#") Blog
+      .footer__copy
+        p.footer__copyright ©2020 Equiteez.All rights reserved.

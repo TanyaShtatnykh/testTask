@@ -1,0 +1,32 @@
+.contact {
+  background-color: rgba(229, 229, 229, 0.31);
+  
+  &__area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1322px;
+    margin: 0 auto;
+    padding: 80px 110px 44px 0; 
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: px-to-em(45);
+    line-height: lh-to-pct(61, 45);
+    font-weight: 600;
+  }
+  &__text {
+    max-width: 375px;
+    font-size: px-to-em(20);
+    font-weight: 400;
+  }
+  &__link {
+    font-size: px-to-em(20);
+    font-weight: 600;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+  &__container {
+    max-width: 654px;
+  }
+}

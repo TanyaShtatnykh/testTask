@@ -1,0 +1,9 @@
+mixin contact(modifier)
+  section.contact&attributes(attributes)
+    .contact__area
+      .contact__info
+        h2.contact__title Contact Us
+        p.contact__text For inquiries regarding events, projects, collaborations, or general information.
+        a.contact__link(href="mailto:info@equiteez.com") info@equiteez.com
+      .contact__container
+        +form

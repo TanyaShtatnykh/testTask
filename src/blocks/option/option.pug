@@ -1,0 +1,5 @@
+mixin option(icon, title, text)
+  .option&attributes(attributes) 
+    img.option__icon(src=`${icon}`, alt="Иконка")
+    h3.option__title=title
+    p.option__text=text

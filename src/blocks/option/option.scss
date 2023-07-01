@@ -1,0 +1,28 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 428px;
+  padding: 50px;
+  border: 1px solid #2ECC71;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+
+  &__icon {
+    margin-bottom: auto;
+  }
+
+  &__title {
+    margin: 22px 0;
+    font-size: px-to-em(25);
+    line-height: lh-to-pct(34, 25);
+    font-weight: 700;
+  }
+  &__text {
+    max-width: 262px;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(25, 18);
+    font-weight: 600;
+    text-align: center;
+  }
+}
