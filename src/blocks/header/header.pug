@@ -1,14 +1,16 @@
 mixin header(modifier)
   header.header&attributes(attributes)
     .header__area
-      img.header__logo(src="img/logo.png", alt="Equiteez")
+      a.header__logo-link(href="#"): img.header__logo(src="img/logo.png", alt="Equiteez")
+      button.header__burger-btn(type="button")
+        include ./img/burger.svg 
       nav.header__menu
         ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#") What Are Digital Securities?
-          li.header__menu-item: a.header__menu-link(href="#") Products
-          li.header__menu-item: a.header__menu-link(href="#") Digitize Your Business
-          li.header__menu-item: a.header__menu-link(href="#") Blog
-          li.header__menu-item: a.header__menu-link(href="#") Contact Us
+          li.header__menu-item: a.header__menu-link(href="#security") What Are Digital Securities?
+          li.header__menu-item: a.header__menu-link(href="#products") Products
+          li.header__menu-item: a.header__menu-link(href="#options") Digitize Your Business
+          li.header__menu-item: a.header__menu-link(href="#blog") Blog
+          li.header__menu-item: a.header__menu-link(href="#contact") Contact Us
       .header__socials
         a.header__social-link(href="#")
           include ./img/twitter.svg

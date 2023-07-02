@@ -48,4 +48,27 @@
     font-weight: 400;
     text-align: center;
   }
+  @media (max-width: 991.98px) {
+    &__area {
+      padding: 40px 6px 30px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__info {
+      margin-right: 0;
+    }
+    &__item:nth-of-type(2n) {
+      margin-top: 20px;
+    }
+    &__link {
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 10px;
+    }
+  }
 }

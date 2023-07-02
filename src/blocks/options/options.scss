@@ -42,4 +42,31 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+  @media screen and (max-width: 1399.98px) {
+    &__area {
+      padding: 10px 110px 42px;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__info {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 16px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__title {
+      text-align: center;
+    }
+    &__info {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &::before {
+      height: 30px;
+    }
+    &__area {
+      padding: 0 20px;
+    }
+  }
 }

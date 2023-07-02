@@ -13,6 +13,7 @@
     font-size: px-to-em(45);
     line-height: lh-to-pct(61, 45);
     font-weight: 600;
+    text-align: center;
   }
   &__text {
     max-width: 880px;
@@ -79,6 +80,59 @@
     &:hover {
       color: #ffffff;
       background-color: #2ECC71;
+    }
+  }
+  @media screen and (max-width: 1399.98px) {
+    &__stages {
+      justify-content: space-around;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__photo {
+      max-width: 226px;
+    }
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(35);
+    }
+    &__text, &__stage-text {
+      font-size: px-to-em(18);
+    }
+    &__stage-title {
+      font-size: px-to-em(22);
+    }
+  } 
+  @media screen and (max-width: 991.98px) {
+    &__area {
+      padding: 40px 20px;
+    }
+    &__stages {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__stage-title {
+      margin: 30px 0 14px;
+    }
+    &__stage-text {
+      margin-bottom: 20px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__field {
+      min-width: 280px;
+      margin-bottom: 18px;
+    }
+    &__btn {
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__btn {
+      padding: 10px 70px;
     }
   }
 }

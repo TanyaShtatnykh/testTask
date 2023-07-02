@@ -17,6 +17,7 @@
     font-size: px-to-em(25);
     line-height: lh-to-pct(34, 25);
     font-weight: 700;
+    text-align: center;
   }
   &__text {
     max-width: 262px;
@@ -24,5 +25,13 @@
     line-height: lh-to-pct(25, 18);
     font-weight: 600;
     text-align: center;
+  }
+  @media screen and (max-width: 1399.98px) {
+    padding: 50px 28px;
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__title {
+      font-size: px-to-em(22);
+    }
   }
 }

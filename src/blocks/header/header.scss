@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   &__area {
     display: flex;
     justify-content: space-between;
@@ -8,6 +10,9 @@
     margin: 0 auto;
     padding: 28px 0;
   }
+  &__burger-btn {
+    display: none;
+  }
   &__menu-list {
     display: flex;
   }
@@ -16,7 +21,7 @@
   }
   &__menu-link {
     font-size: px-to-em(18);
-    line-height: lh-to-pct(24.51, 18);
+    line-height: lh-to-pct(25, 18);
     font-weight: 600;
     text-decoration: none;
     color: #000000;
@@ -43,6 +48,100 @@
     }
     &:not(:last-of-type) {
       margin-right: 8px;
+    }
+  }
+  @media screen and (max-width: 1399.98px) {
+    &__area {
+      padding: 32px 110px;
+    }
+    &__logo {
+      max-width: 150px;
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    &__menu-item:not(:last-of-type) {
+      margin-right: 20px;
+    }
+    &__menu-link {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__area {
+      padding: 30px 20px;
+    }
+    &__social-link {
+      svg {
+        width: 25px;
+      }
+    }
+    &__menu-item:not(:last-of-type) {
+      margin-right: 16px;
+    }
+    &__menu-link {
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    min-height: 107px;
+    &__area {
+      &--open {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 26px 20px;
+        background-color: #2ECC71;
+        z-index: 8;
+      }
+    }
+    &__logo-link {
+      margin-left: auto;
+      &--hidden {
+        display: none;
+      }
+    }
+    &__burger-btn {
+      display: block;
+      margin-left: auto;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      transition: 0.5s;
+      z-index: 10;
+      &--open {
+        margin-left: auto;
+        rotate: 90deg;
+        rect {
+          fill: #fff;
+        }
+      }
+    }
+    &__menu, &__socials {
+      display: none;
+      &--open {
+        display: flex;
+      }
+    }
+    &__menu-list {
+      flex-direction: column;
+      margin-bottom: 90px;
+    }
+    &__menu-item {
+      margin-bottom: 14px;
+    }
+    &__social-link {
+      path {
+        fill: #000;
+      }
+      path#Shape {
+        fill: #2ECC71;
+      }
     }
   }
 }

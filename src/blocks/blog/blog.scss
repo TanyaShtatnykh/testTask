@@ -15,9 +15,9 @@
     font-weight: 600;
   }
   &__posts {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
     margin-bottom: 30px;
   }
   &__post {
@@ -50,6 +50,35 @@
     &:hover {
       background-color: transparent;
       color: #2ECC71;
+    }
+  }
+  @media screen and (max-width: 1399.98px) {
+    &__area {
+      padding: 76px 90px 34px;
+    }
+    &__photo {
+      max-width: 368px;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__area {
+      padding: 76px 20px 44px;
+    }
+    &__posts {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 38px;
+    }
+    &__photo {
+      max-width: 430px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__post {
+      max-width: 320px;
+    }
+    &__photo {
+      max-width: 320px;
     }
   }
 }

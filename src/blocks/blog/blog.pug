@@ -1,7 +1,7 @@
 mixin blog(modifier)
-  section.blog&attributes(attributes)
+  section.blog&attributes(attributes)#blog
     .blog__area
-      .blog__title Blog
+      h2.blog__title Blog
       ul.blog__posts
         li.blog__post
           img.blog__photo(src="img/photo1.png", alt="Картинка")

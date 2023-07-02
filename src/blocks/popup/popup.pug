@@ -1,0 +1,7 @@
+mixin popup(modifier)
+  .popup&attributes(attributes)
+    .popup__content
+      button.popup__close(type="button")
+        include ./img/close.svg
+      h2.popup__title Singnup For Free
+      +form

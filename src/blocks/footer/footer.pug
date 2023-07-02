@@ -3,8 +3,8 @@ mixin footer(modifier)
     .footer__area
       .footer__container
         .footer__info
-          img.footer__logo(src="img/footerLogo.png", alt="Logo")
-          a.footer__menu-link(href="#") Contact Us
+          a.footer__logo-link(href="#"): img.footer__logo(src="img/footerLogo.png", alt="Logo")
+          a.footer__menu-link(href="#contact").footer__menu-link--contact Contact Us
           .footer__social
             a.footer__social-link(href="#")
               include ./img/Ftwitter.svg
@@ -14,11 +14,10 @@ mixin footer(modifier)
               include ./img/Flinkedin.svg
             a.footer__social-link(href="#")
               include ./img/Fmedium.svg
-        .footer__info
-        ul.footer__menu-list
-          li.footer__menu-item: a.footer__menu-link(href="#") What Are Digital Securities?
-          li.footer__menu-item: a.footer__menu-link(href="#") Products
-          li.footer__menu-item: a.footer__menu-link(href="#") Digitize Your Business
-          li.footer__menu-item: a.footer__menu-link(href="#") Blog
+        ul.footer__info.footer__info--menu
+          li.footer__menu-item: a.footer__menu-link(href="#security") What Are Digital Securities?
+          li.footer__menu-item: a.footer__menu-link(href="#products") Products
+          li.footer__menu-item: a.footer__menu-link(href="#options") Digitize Your Business
+          li.footer__menu-item: a.footer__menu-link(href="#blog") Blog
       .footer__copy
         p.footer__copyright ©2020 Equiteez.All rights reserved.

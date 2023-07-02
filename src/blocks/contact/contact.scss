@@ -26,7 +26,23 @@
     color: #2ECC71;
     text-decoration: none;
   }
-  &__container {
-    max-width: 654px;
+  @media screen and (max-width: 1399.98px) {
+    &__area {
+      padding: 80px 110px 44px;
+    }
+  }
+  @media screen and (max-width: 1365.98px) {
+    &__info {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__area {
+      flex-direction: column;
+      padding: 16px 16px 54px;
+    }
+    &__info {
+      margin-bottom: 10px;
+    }
   }
 }
