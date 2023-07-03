@@ -60,10 +60,12 @@
       max-width: 368px;
     }
   }
-  @media screen and (max-width: 991.98px) {
+  @media screen and (max-width: 1366px) {
     &__area {
       padding: 76px 20px 44px;
     }
+  }
+  @media screen and (max-width: 1199.98px) {
     &__posts {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
