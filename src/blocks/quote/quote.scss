@@ -6,33 +6,21 @@
     margin: 0 auto;
     padding: 50px 0;
   }
-  &__container {
+  &__text {
     max-width: 600px;
     margin: 0 auto;
+    font-size: px-to-em(30);
+    line-height: lh-to-pct(41, 30);
     font-weight: 600;
     text-align: center;
     color: #2FCC71;
   }
-  &__title {
-    font-size: px-to-em(32);
-    line-height: lh-to-pct(44, 32);
-  }
-  &__text {
-    font-size: px-to-em(30);
-    line-height: lh-to-pct(41, 30);
-  }
-  &__name {
-    font-size: px-to-em(28);
-    line-height: lh-to-pct(38, 28);
-  }
+
   @media screen and (max-width: 991.98px) {
     &__area {
       padding: 28px 32px
     }
-    &__title, &__text {
-      font-size: px-to-em(22);
-    }
-    &__name {
+    &__text {
       font-size: px-to-em(20);
     }
   }
@@ -41,5 +29,4 @@
       max-width: 280px;
     }
   }
-
 }

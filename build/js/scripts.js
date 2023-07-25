@@ -27,6 +27,7 @@ $(function () {
 });
 
 
+
 $(function () {
   $('.welcome__btn').on('click', function () {
     $('.popup').addClass('popup--open');
@@ -39,11 +40,11 @@ $(function () {
 
 
 $(function () {
-  $('.security__btn').on('click', function() {
+  $('.security__btn').on('click', function(e) {
     $('.modal').addClass('modal--open');
     setTimeout(function () {
       $('.modal').removeClass('modal--open');
-    }, 3000);
+    }, 2000);
   });
 });
 $(window).on('load resize', function() {
